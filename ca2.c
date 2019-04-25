@@ -29,13 +29,13 @@ void resource(int allocation[20][20],int need[20][20],int avail[20][20],int p_id
 	for(i=0;i<q;i++)
 	if(request_m[0][i]>need[p_id][i]);
 	{
-		printf("\nError Encountered\n");
+		printf("\nError Found\n");
 		exit(0);
 	}
 	for(i=0;i<q;i++)
 	if(request_m[0][i]>avail[0][i])
 	{
-		printf("Resources are unavailable\n");
+		printf("Resources are not available\n");
 		exit(0);
 	}
 	for(i=0;i<q;i++)
